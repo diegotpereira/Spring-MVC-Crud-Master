@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">
-				<h5 class="white-text">Material de Estudo</h5>
+				<h5 class="white-text">Projeto de demonstração</h5>
 				<p class="grey-text text-lighten-4">Este material é apenas um
 					material de estudo. Tecnologias: Spring MVC, Spring Data JDBC
 					Template, JSP utilizando Material Design no front-end.</p>
@@ -31,8 +31,8 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			© 2017 - Material de estudo - Cadastro de Escolas/Cursos <a
-				class="grey-text text-lighten-4 right" href="github.com/hstrada">github.com/hstrada</a>
+			© 2020 - Projeto de demonstração - Cadastro de Escolas/Cursos <a
+				class="grey-text text-lighten-4 right" href="https://github.com/diegotpereira">github.com/diegotpereira</a>
 		</div>
 	</div>
 </footer>
