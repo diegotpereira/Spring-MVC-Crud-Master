@@ -38,7 +38,7 @@
 
 	<nav class="light-blue lighten-1" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">DBESCOLA</a>
+			<a id="logo-container" href="#" class="brand-logo">APPESCOLA</a>
 			<ul class="right hide-on-med-and-down">
 
 				<li><a class="dropdown-button" href="#!"

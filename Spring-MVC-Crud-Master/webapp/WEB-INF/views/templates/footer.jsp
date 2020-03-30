@@ -15,7 +15,7 @@
 
 			</div>
 			<div class="col l3 s12">
-				<h5 class="white-text">DBESCOLA</h5>
+				<h5 class="white-text">APPESCOLA</h5>
 				<ul>
 					<li><a class="white-text"
 						href=<c:url value="/escola/cadastro" />>Cadastrar Escola</a></li>

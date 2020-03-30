@@ -6,9 +6,9 @@
 			<h2 class="center light-blue-text">
 				<i class="material-icons">flash_on</i>
 			</h2>
-			<h5 class="center">Material de Estudo</h5>
+			<h5 class="center">Projeto de demonstração</h5>
 
-			<p class="light center">Este é apenas um material de estudo.
+			<p class="light center">Este é apenas um projeto de demonstração.
 				Tecnologias: Spring MVC, Spring Data JDBC Template e JSP.</p>
 		</div>
 	</div>
