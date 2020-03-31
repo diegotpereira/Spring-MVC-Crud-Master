@@ -8,8 +8,7 @@
 		<div class="row">
 			<div class="col l6 s12">
 				<h5 class="white-text">Projeto de demonstração</h5>
-				<p class="grey-text text-lighten-4">Este material é apenas um
-					material de estudo. Tecnologias: Spring MVC, Spring Data JDBC
+				<p class="grey-text text-lighten-4">Este é apenas um projeto de demonstração. Tecnologias: Spring MVC, Spring Data JDBC
 					Template, JSP utilizando Material Design no front-end.</p>
 
 
