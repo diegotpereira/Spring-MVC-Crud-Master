@@ -22,8 +22,8 @@
 						href=<c:url value="/escola/listar" />>Listar Escolas</a></li>
 					<li><a class="white-text"
 						href=<c:url value="/curso/cadastro" />>Cadastrar Curso</a></li>
-					<li><a class="white-text" href=<c:url value="/curso/listar" />>Listar
-							Cursos</a></li>
+					<li><a class="white-text" 
+					    href=<c:url value="/curso/listar" />>Listar Cursos</a></li>
 				    <li><a class="white-text"
 						href=<c:url value="/aluno/cadastro" />>Cadastrar Aluno</a></li>			
 				</ul>
