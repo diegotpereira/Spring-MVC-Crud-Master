@@ -21,4 +21,7 @@
 	<bean id="jdbcCursosDAO" class="br.com.java.dao.JdbcCursosDao">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
+	<bean id="jdbcAlunosDAO" class="br.com.java.dao.JdbcAlunosDao">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
 </beans>
