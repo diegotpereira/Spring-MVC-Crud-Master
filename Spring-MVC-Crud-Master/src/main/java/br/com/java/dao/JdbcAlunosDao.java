@@ -20,7 +20,7 @@ public class JdbcAlunosDao {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
-	public void incluirCurso(Aluno aluno) throws Exception {
+	public void incluirAluno(Aluno aluno) throws Exception {
 		try {
 			String query = "INSERT INTO ALUNOS (ID,IDESCOLA,DESCRICAO) VALUES (?,?,?)";
 			jdbcTemplate.update(query, aluno.getCpf(), aluno.getEscola().getId(), aluno.getNome());
@@ -28,15 +28,20 @@ public class JdbcAlunosDao {
 			throw e;
 		}
 	}
-	public List<Aluno> listarAlunosPorEscola(int cpf) throws Exception {
-		List<Aluno> aluno = new ArrayList<>();
+	public List<Curso> listarCursosPorEscola(int id) throws Exception {
+		List<Curso> cursos = new ArrayList<>();
 		try {
-			aluno = jdbcTemplate.query("SELECT * FROM ALUNOS WHERE IDESCOLA=?", new Integer[] { cpf },
-					new AlunoMapper());
+			cursos = jdbcTemplate.query("SELECT * FROM CURSOS WHERE IDESCOLA=?", new Integer[] { id },
+					new CursoMapper());
 		} catch (Exception e) {
 			throw e;
 		}
-		return aluno;
+		return cursos;
+	}
+
+	public Object listarAlunos() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

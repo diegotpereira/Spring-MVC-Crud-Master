@@ -28,12 +28,18 @@
 </head>
 <body>
 	<ul id="dropdown1" class="dropdown-content">
+	    
 		<li><a href=<c:url value="/escola/cadastro" />>Cadastrar</a></li>
 		<li><a href=<c:url value="/escola/listar" />>Listar</a></li>
 	</ul>
 	<ul id="dropdown2" class="dropdown-content">
 		<li><a href=<c:url value="/curso/cadastro" />>Cadastrar</a></li>
 		<li><a href=<c:url value="/curso/listar" />>Listar</a></li>
+	</ul>
+	
+	<ul id="dropdown3" class="dropdown-content">
+		<li><a href=<c:url value="/aluno/cadastro" />>Cadastrar</a></li>
+<!-- 		<li><a href=<c:url value="/aluno/listar" />>Listar</a></li> -->
 	</ul>
 
 	<nav class="light-blue lighten-1" role="navigation">
@@ -47,6 +53,9 @@
 				<li><a class="dropdown-button" href="#!"
 					data-activates="dropdown2">Cursos<i
 						class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="dropdown-button" href="#!"
+					data-activates="dropdown3">Alunos<i
+						class="material-icons right">arrow_drop_down</i></a></li>		
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
@@ -56,6 +65,8 @@
 				<li><a href=<c:url value="/curso/cadastro" />>Cadastrar
 						Curso</a></li>
 				<li><a href=<c:url value="/curso/listar" />>Listar Cursos</a></li>
+				<li><a href=<c:url value="/aluno/cadastro" />>Cadastrar
+						Aluno</a></li>
 			</ul>
 
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i
