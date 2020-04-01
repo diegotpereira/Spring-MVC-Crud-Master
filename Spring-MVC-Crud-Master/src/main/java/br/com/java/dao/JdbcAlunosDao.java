@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import br.com.java.model.Aluno;
 import br.com.java.model.Curso;
+import br.com.java.model.Escola;
 
 public class JdbcAlunosDao {
 	
@@ -22,26 +23,31 @@ public class JdbcAlunosDao {
 	
 	public void incluirAluno(Aluno aluno) throws Exception {
 		try {
-			String query = "INSERT INTO ALUNOS (ID,IDESCOLA,DESCRICAO) VALUES (?,?,?)";
-			jdbcTemplate.update(query, aluno.getCpf(), aluno.getEscola().getId(), aluno.getNome());
+			String query = "INSERT INTO ALUNOS (IDESCOLA,NOME,ENDERECO,TELEFONE) VALUES (?,?,?,?)";
+			jdbcTemplate.update(query, aluno.getEscola().getId(), aluno.getNome(), aluno.getEndereco(),aluno.getTelefone());
 		} catch (Exception e) {
 			throw e;
 		}
 	}
-	public List<Curso> listarCursosPorEscola(int id) throws Exception {
-		List<Curso> cursos = new ArrayList<>();
+	
+	public Escola buscarEscola(int id) throws Exception {
+		Escola escola = null;
 		try {
-			cursos = jdbcTemplate.query("SELECT * FROM CURSOS WHERE IDESCOLA=?", new Integer[] { id },
-					new CursoMapper());
+			String query = "SELECT * FROM ESCOLA WHERE ID=?";
+			escola = jdbcTemplate.queryForObject(query, new Integer[] { id }, new EscolaMapper());
 		} catch (Exception e) {
 			throw e;
 		}
-		return cursos;
+		return escola;
 	}
 
-	public Object listarAlunos() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Escola> listarEscolas() throws Exception {
+		List<Escola> escolas = new ArrayList<>();
+		try {
+			escolas = jdbcTemplate.query("SELECT * FROM ESCOLA", new EscolaMapper());
+		} catch (Exception e) {
+			throw e;
+		}
+		return escolas;
 	}
-
 }
