@@ -6,7 +6,7 @@ public class Aluno {
 	
 	private String nome;
 	
-	private String curso;
+//	private String curso;
 	
 	private String endereco;
 	
@@ -32,13 +32,13 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	public String getCurso() {
-		return curso;
-	}
-
-	public void setCurso(String curso) {
-		this.curso = curso;
-	}
+//	public String getCurso() {
+//		return curso;
+//	}
+//
+//	public void setCurso(String curso) {
+//		this.curso = curso;
+//	}
 
 	public String getEndereco() {
 		return endereco;
