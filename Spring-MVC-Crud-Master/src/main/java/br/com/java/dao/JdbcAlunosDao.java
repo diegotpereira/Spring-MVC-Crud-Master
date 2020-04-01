@@ -30,24 +30,24 @@ public class JdbcAlunosDao {
 		}
 	}
 	
-	public Escola buscarEscola(int id) throws Exception {
-		Escola escola = null;
+	public Aluno buscarAluno(int id) throws Exception {
+		Aluno aluno = null;
 		try {
-			String query = "SELECT * FROM ESCOLA WHERE ID=?";
-			escola = jdbcTemplate.queryForObject(query, new Integer[] { id }, new EscolaMapper());
+			String query = "SELECT * FROM ALUNOS WHERE ID=?";
+			aluno = jdbcTemplate.queryForObject(query, new Integer[] { id }, new AlunoMapper());
 		} catch (Exception e) {
 			throw e;
 		}
-		return escola;
+		return aluno;
 	}
 
-	public List<Escola> listarEscolas() throws Exception {
-		List<Escola> escolas = new ArrayList<>();
+	public List<Aluno> listarAlunos() throws Exception {
+		List<Aluno> alunos = new ArrayList<>();
 		try {
-			escolas = jdbcTemplate.query("SELECT * FROM ESCOLA", new EscolaMapper());
+			alunos = jdbcTemplate.query("SELECT * FROM ALUNOS", new AlunoMapper());
 		} catch (Exception e) {
 			throw e;
 		}
-		return escolas;
+		return alunos;
 	}
 }
